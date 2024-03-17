@@ -13,8 +13,8 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.heroContainer {
+  background-color: #EEEEEE;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,6 +26,28 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.navBar {
+  background-color: #222831;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navItem {
+  display: inline;
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #EEEEEE;
+}
+
+.navItem:hover {
+  background-color: #31363F;
 }
 
 @keyframes App-logo-spin {

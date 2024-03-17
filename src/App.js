@@ -1,23 +1,20 @@
 import logo from './logo.svg';
+import { useState } from 'react'
 import './App.css';
 
-function App() {
+const App = () => {
+  //onClick={() => window.location.replace("/about"
+  const [displayAllProjects, setDisplayAllProjects] = useState(false)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <ul className='navBar'>
+          <li className='navItem'>About</li>
+          <li className='navItem'>Skills</li>
+          <li className='navItem' onClick={() => setDisplayAllProjects(true)}>All Projects</li>
+        </ul>
+      <div className='heroContainer'>
+
+      </div>
     </div>
   );
 }
