@@ -12,8 +12,20 @@ const App = () => {
           <li className='navItem'>Skills</li>
           <li className='navItem' onClick={() => setDisplayAllProjects(true)}>All Projects</li>
         </ul>
-      <div className='heroContainer'>
-
+      <h1 className='header1'>Featured Projects</h1>
+      <div className='projContainer'>
+        <div className='proj'>
+          <h3>Left Example Project</h3>
+          <p>Text describing example project. Entire div should be clickable!</p>
+        </div>
+        <div className='proj'>
+          <h3>Middle Example Project</h3>
+          <p>Text describing example project. Entire div should be clickable!</p>
+        </div>
+        <div className='proj'>
+          <h3>Right Example Project</h3>
+          <p>Text describing example project. Entire div should be clickable!</p>
+        </div>
       </div>
     </div>
   );
