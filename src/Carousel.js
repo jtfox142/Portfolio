@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import './Carousel.css'
+
 const Carousel = ({ images }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const nextSlide = () => {

@@ -4,7 +4,7 @@
 }
 
 .navBar {
-  background-color: #222831;
+  background-color: #030303;
   list-style-type: none;
   margin: 0;
   padding: 0.5em;
@@ -12,7 +12,19 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 999;
+}
+
+.navTitle {
+  display: inline;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  padding-left: 4vw;
+  text-decoration: none;
+  font-weight: bold;
+  color: #EEEEEE;
 }
 
 .navItem {
@@ -29,12 +41,34 @@
   background-color: #31363F;
 }
 
+.profilePic {
+   /* padding: 5vh;*/
+    padding-top: 2vh;
+    height: 20em;
+    width: 20em;
+    border-radius: 50%;
+    /*overflow: hidden;*/
+
+}
+
+/* TODO rename later */
+.fillBackgroundLater {
+    padding-top: 10em;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
 .header1 {
-  color: #76ABAE;
+  color:#101111;
   font-size: 4em;
   margin-top: 7vh;
   margin-bottom: 10vh;
-  padding-top: 5vh;
+  padding-top: 2vh;
 }
 
 .projContainer {

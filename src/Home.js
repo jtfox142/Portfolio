@@ -3,10 +3,12 @@ import { useNavigate } from 'react-router-dom'
 import Navbar from './Navbar.js'
 import './App.css'
 import Carousel from './Carousel.js'
+import ProjModal from './ProjModal.js'
+import picasso from './the-death-of-casagemas.jpg'
 
 const Home = () => {
   //onClick={() => window.location.replace("/about"
-  const [projectURL, setProjectURL] = useState("")
+  /*
   const [displayAllProjects, setDisplayAllProjects] = useState(false)
   const goToAllProjects = () => {
     setDisplayAllProjects(true);
@@ -14,7 +16,9 @@ const Home = () => {
 
   const navigateTo = () => {
     window.location.href = "{projectURL}"
-  }
+  }*/
+
+  const [showModal, setShowModal] = useState(false);
 
   const images = [
     'https://via.placeholder.com/800x400/ff5733/fff',
@@ -24,11 +28,16 @@ const Home = () => {
 
   return (
     <div className="App">
-      <Navbar 
-      toggleAllProjects={() => setDisplayAllProjects(true)}/>
+      <Navbar />
+      {/*TODO: as the className says */}
+      <div className='fillBackgroundLater' >
+        <img src={picasso} className='profilePic' alt='The best developer on the planet />' /> {/*TODO replace picasso*/}
+        <h1 className='header1'> Welcome</h1>
+      </div>
       <h1 className='header1'>Featured Projects</h1>
+      <ProjModal show={showModal} onClose={() => setShowModal(false)}/>
       <div className='projContainer'>
-        <div className='proj' onClick={() => window.location.href="https://github.com/jtfox142/ASL-Translator"}>
+        <div className='proj' onClick={() => setShowModal(true)}>
           <h3>ASL Translator</h3>
           <p>Currently in progress. Will use phone cameras and accelerometer sensors to translate basic signs. Click me!</p>
         </div>
