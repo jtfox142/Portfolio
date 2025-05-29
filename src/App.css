@@ -6,8 +6,14 @@
 .navBar {
   background-color: #030303;
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   margin: 0;
-  padding: 0.5em;
+  padding: 0;
+  height: auto;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -16,25 +22,22 @@
 }
 
 .navTitle {
-  display: inline;
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  padding-left: 4vw;
+  padding: 0.75rem 1rem;
   text-decoration: none;
   font-weight: bold;
   color: #EEEEEE;
 }
 
+.navSpacer {
+  margin-left: auto;
+}
+
 .navItem {
-  display: inline;
-  float: right;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
+  overflow: hidden;
+  padding: 0.75rem 1rem;
   text-decoration: none;
   color: #EEEEEE;
+  white-space: nowrap;
 }
 
 .navItem:hover {
@@ -53,14 +56,14 @@
 
 /* TODO rename later */
 .fillBackgroundLater {
-    padding-top: 10em;
-    width: 100vw;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
+  padding-top: 10em;
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
 }
 
 .header1 {
