@@ -27,15 +27,16 @@ const Home = () => {
     'https://via.placeholder.com/800x400/5733ff/fff',
   ];
 
+  /*TODO: 
+    * Pull CSS into appropriate files
+    * Pull ProjModal into ProjShowcase 
+  */
   return (
     <div className="App">
       <Navbar />
       <Welcome />
       <ProjModal show={showModal} onClose={() => setShowModal(false)}/>
       <ProjShowcase />
-
-      <h1>Skills</h1>
-      <Carousel images={images} />
     </div>
   );
 }
