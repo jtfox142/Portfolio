@@ -4,7 +4,7 @@ import Navbar from './Navbar.js'
 import './App.css'
 import Carousel from './Carousel.js'
 import ProjModal from './ProjModal.js'
-import picasso from './the-death-of-casagemas.jpg'
+import Welcome from './Welcome.js'
 
 const Home = () => {
   //onClick={() => window.location.replace("/about"
@@ -29,11 +29,7 @@ const Home = () => {
   return (
     <div className="App">
       <Navbar />
-      {/*TODO: as the className says */}
-      <div className='fillBackgroundLater' >
-        <img src={picasso} className='profilePic' alt='The best developer on the planet />' /> {/*TODO replace picasso*/}
-        <h1 className='header1'> Welcome</h1>
-      </div>
+      <Welcome />
       <h1 className='header1'>Featured Projects</h1>
       <ProjModal show={showModal} onClose={() => setShowModal(false)}/>
       <div className='projContainer'>
